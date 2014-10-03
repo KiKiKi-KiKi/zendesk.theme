@@ -1,0 +1,13 @@
+block variable
+doctype html
+html
+  head
+    title= (title || 'Title')
+    block DocumentHead
+  body
+    block header
+      include header
+    main(role="main")
+      block main
+    block footer
+      include footer
